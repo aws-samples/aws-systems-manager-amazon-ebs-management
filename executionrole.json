@@ -1,0 +1,25 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "cloudtrail:LookupEvents",
+                "cloudtrail:StartLogging",
+                "cloudtrail:GetTrailStatus",
+                "logs:CreateLogGroup",
+                "logs:PutLogEvents",
+                "ssm:CreateOpsItem",
+                "cloudtrail:DescribeTrails",
+                "ec2:DescribeVolumeAttribute",
+                "logs:CreateLogStream",
+                "sns:Publish",
+                "ec2:DescribeVolumeStatus",
+                "cloudtrail:CreateTrail",
+                "ec2:DescribeVolumes"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
