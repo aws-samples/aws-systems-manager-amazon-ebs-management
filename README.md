@@ -45,11 +45,13 @@ Before getting started, please make sure you've completed the following:
     * From the directory where you placed the Lambda function and the requirements.txt file, run the following command to create local copies of the boto3, botocore, and awscli packages (include the “.” at the end):
 
       **MacOS/Linux:** `pip install --upgrade -r requirements.txt -t .`
+
       **Windows:** `pip install -r requirements.txt -t .`
 
     * Recursively zip the contents of the directory where the Lambda function resides to create a deployment package using the following command, which is run from the Lambda function’s directory (include the “.” at the end):
     
       **MacOS/Linux:** `zip -r9 ../opsCenterAgedEBSVolumeFinder.zip .`
+      
       **Windows:**  `7z.exe a -r c:\code\opsCenterAgedEBSVolumeFinder.zip .`
 
     * Upload the package to Lambda by updating the existing function (replace your function name, Region, and zip file name if needed), running this command from where the zip file exists:
