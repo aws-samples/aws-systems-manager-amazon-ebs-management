@@ -51,7 +51,7 @@ Before getting started, please make sure you've completed the following:
     * Recursively zip the contents of the directory where the Lambda function resides to create a deployment package using the following command, which is run from the Lambda function’s directory (include the “.” at the end):
     
       **MacOS/Linux:** `zip -r9 ../opsCenterAgedEBSVolumeFinder.zip .`
-      
+
       **Windows:**  `7z.exe a -r c:\code\opsCenterAgedEBSVolumeFinder.zip .`
 
     * Upload the package to Lambda by updating the existing function (replace your function name, Region, and zip file name if needed), running this command from where the zip file exists:
@@ -76,4 +76,4 @@ Joshua Zeiser, Senior Technical Account Manager, AWS
 
 ## License
 
-This sample code is made available under the MIT-0 license. See the [LICENSE](LICENSE.md) file for details
+This sample code is made available under the MIT-0 license. See the [LICENSE](LICENSE) file for details
